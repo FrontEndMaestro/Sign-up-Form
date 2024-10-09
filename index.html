@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background">
+        <div class="image-sidebar">
+            <img src="rs7.svg" alt="" class="vector">
+            <h1 class="rs">7</h1>
+        </div>
+
+    </div>
+    <div class="form-container">
+        <div class="intro">
+            <p>
+                Is the Audi RS7 the car you've always dreamed of owning? Take the first step towards making that dream
+                a reality—sign up now and get all the details you need!</p>
+        </div>
+
+        <form method="post" action="https://formspree.io/f/mnnaypbe">
+            <div class="form">
+                <h2>Get your RS 7 now!</h2>
+                <div class="row">
+                    <div class="input-cont">
+                        <label for="f-name">FIRST NAME</label>
+                        <input type="text" id="f-name" name="f-name" required>
+                    </div>
+                    <div class="input-cont">
+                        <label for="l-name">LAST NAME</label>
+                        <input type="text" id="l-name" name="l-name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-cont">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-cont">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-cont">
+                        <label for="passwrd">PASSWORD</label>
+                        <input type="password" id="passwrd" name="passwrd" required>
+                        <span class="falsematch">*Passwords do not match</span>
+                    </div>
+                    <div class="input-cont">
+                        <label for="confirmpasswrd">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirmpasswrd" name="confirmpasswrd" required>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+            <p class="login">Already have an account? <span>Log in</span></p>
+        </form>
+
+    </div>
+</body>
+
+</html>

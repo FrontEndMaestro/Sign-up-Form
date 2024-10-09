@@ -1,0 +1,186 @@
+:root {
+    --background-color: whitesmoke;
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--background-color);
+    line-height: 1.5;
+    height: 100vh;
+    display: flex;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+.sidebar {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.background {
+    flex: 2;
+    position: relative;
+    background: no-repeat url(resources/audi.jpg);
+    background-origin: border-box;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+}
+
+.image-sidebar {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    top: 200px;
+    min-width: 100%;
+    min-height: 10vh;
+    text-align: center;
+    background-color: rgba(8, 8, 8, 0.7);
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+.rs {
+    color: black;
+    color: rgb(175, 178, 181);
+}
+
+.vector {
+
+    height: 100px;
+    width: 100px;
+    background-color: rgba(0, 0, 255, 0);
+}
+
+.form-container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 0px 200px 0px;
+    font-family: sans-serif;
+}
+
+.intro {
+    color: black;
+    font-family: "Roboto Condensed", sans-serif;
+    max-width: 60%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.form {
+    background-color: rgb(255, 255, 255);
+    padding: 25px 0px 25px 50px;
+    box-shadow: 0px 4px 10px rgb(178, 174, 174);
+}
+
+label {
+    font-weight: 500;
+    font-size: .8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+input {
+    width: 300px;
+    border: 2px solid #d7d8db;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+input:focus {
+    border-color: rgb(121, 121, 228);
+    box-shadow: 2px 3px rgb(213, 210, 210);
+    outline: none;
+}
+
+input[type="password"]:invalid {
+    border-color: red;
+}
+
+.falsematch {
+    visibility: hidden;
+    color: red;
+    font-weight: 600;
+    font-size: .8em;
+    height: 15px;
+}
+
+input[id="passwrd"]:invalid+.falsematch {
+    visibility: visible;
+}
+
+button {
+    border: none;
+    margin-left: 50px;
+    background-color: rgb(80, 82, 60);
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.login {
+    margin-left: 50px;
+    font-size: medium;
+    margin-top: 10px;
+}
+
+
+span {
+    font-weight: bolder;
+    color: rgb(89, 90, 63);
+}
